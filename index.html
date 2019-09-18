@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Simple Temperature Converter V1.0</title>
+    <style>
+        #container-box {
+            background-color: skyblue;
+            width: 300px;
+            height: 250px;
+            margin: 180px;
+            border-radius: 10px;
+        }
+        .container-box-layer {
+            background-color: maroon;
+            width: 260px;
+            height: 210px;
+            margin: 20px;
+            position: absolute;
+            border-radius: 5px;
+        }
+        .celsuis,
+        .kelvin,
+        .fahrenheit {
+            margin: 10px;
+        }
+        .container-header {
+            color: white;
+            border: solid 0.5px;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <p>This is my sample temperatureConverterV1.0 project</p>
+    <div id="container-box">
+        <div class="container-box-layer">
+            <div class="container-header">
+                Temperature Converter V1.0
+            </div>
+            <div>
+                <label>Celsuis</label>
+                <form class="celsuis">
+                    <input type="text" placeholder="celsius" />
+                    <br>
+                </form>
+                <label>Kelvin</label>
+                <form class="kelvin">    
+                    <input type="text" placeholder="kelvin" />
+                    <br>
+                </form>
+                <label>Fahrenheit</label>
+                <form class="fahrenheit">
+                    <input type="text" placeholder="fahrenheit" />
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
