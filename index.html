@@ -5,58 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Simple Temperature Converter V1.0</title>
-    <style>
-        #container-box {
-            background-color: skyblue;
-            width: 300px;
-            height: 250px;
-            margin: 180px;
-            border-radius: 10px;
-        }
-        .container-box-layer {
-            background-color: maroon;
-            width: 260px;
-            height: 210px;
-            margin: 20px;
-            position: absolute;
-            border-radius: 5px;
-        }
-        .celsuis,
-        .kelvin,
-        .fahrenheit {
-            margin: 10px;
-        }
-        .container-header {
-            color: white;
-            border: solid 0.5px;
-            padding: 10px;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="img/fontawesome-with-css/css/all.min.css">
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dharmyx/image/upload/v1589457788/Mini-Quiz-App/img/favicontemp.png" sizes="16x16">
 </head>
 <body>
-    <div id="container-box">
-        <div class="container-box-layer">
-            <div class="container-header">
-                Temperature Converter V1.0
-            </div>
-            <div>
-                <label>Celsuis</label>
-                <form class="celsuis">
-                    <input type="text" placeholder="celsius" />
+    <div class="intro"><h2>Your quick temperature converter tool</h2></div>
+    <div class="container-box">
+       <div class="box2">
+        <div class="container-header">
+            Temperature Converter
+        </div>
+            <div class="units">
+                <label class="celsius0">Celsuis</label>
+                <form class="celsius1">
+                    <input type="number" placeholder="Celsius" />
                     <br>
                 </form>
-                <label>Kelvin</label>
-                <form class="kelvin">    
-                    <input type="text" placeholder="kelvin" />
+                <label class="kelvin0">Kelvin</label>
+                <form class="kelvin1">    
+                    <input type="number" placeholder="Kelvin" />
                     <br>
                 </form>
-                <label>Fahrenheit</label>
-                <form class="fahrenheit">
-                    <input type="text" placeholder="fahrenheit" />
+                <label class="fahrenheit0">Fahrenheit</label>
+                <form class="fahrenheit1">
+                    <input type="number" placeholder="Fahrenheit" />
                 </form>
             </div>
         </div>
     </div>
+    
+    <script src="app.js"></script>
+
 </body>
+<footer id="footer-items">
+    <div class="footer-contents">
+        <div>
+            <a class="facebook" href="https://www.facebook.com/teminidami" target="_blank"><i
+                    class="fab fa-facebook"></i></a>
+            <a class="twitter" href="https://www.twitter.com/iamMajordonlass" target="_blank"><i
+                    class="fab fa-twitter"></i></a>
+            <a class="instagram" href="https://www.instagram.com/teminidami" target="_blank"><i
+                    class="fab fa-instagram-square"></i></a>
+            <a class="linkedin" href="https://www.linkedin.com/in/damilola-babalola-90" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a class="github" href="https://www.github.com/dharmyx" target="_blank"><i
+                    class="fab fa-github"></i></a>
+            <a class="envelope" href="mailto:teminidami@yahoo.co.uk" target="_blank"><i
+                    class="fas fa-envelope"></i></a>
+        </div>
+        <p class="footer">Alrights reserved &#169; Damilola Babalola | Start.ng Internship Program 2020
+        </p>
+    </div>
+</footer>
+
 </html>

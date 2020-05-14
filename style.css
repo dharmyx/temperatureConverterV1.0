@@ -1,0 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Muli';
+    background-image: url(https://res.cloudinary.com/dharmyx/image/upload/v1589457774/Mini-Quiz-App/img/panoramic-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.intro {
+    width: fit-content;
+    margin: auto;
+    padding-top: 60px;
+    color: #fff;
+    margin-bottom: -80px;
+    animation: backInLeft 2s 1;
+}
+
+@keyframes backInLeft {
+    0% {
+      -webkit-transform: translateX(-2000px) scale(0.7);
+      transform: translateX(-2000px) scale(0.7);
+      opacity: 0.7;
+    }
+  
+    80% {
+      -webkit-transform: translateX(0px) scale(0.7);
+      transform: translateX(0px) scale(0.7);
+      opacity: 0.7;
+    }
+  
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  h2 {
+      font-size: 20px;
+      text-align: center;
+  }
+
+.container-box {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    ". . ."
+    ". b .";
+    animation: fadeIn 5s 1;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+.box2 {
+    grid-area: b;
+    border: 5px solid #5a2912;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.container-header {
+    color: white;
+    border: solid 3px #e4a676;
+    border-radius: 15px 15px 0px 0px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.celsius1,
+.kelvin1,
+.fahrenheit1 {
+    margin: 10px;
+}
+
+.celsius1,
+.kelvin1,
+.fahrenheit1 {
+    margin-bottom: 20px;
+}
+
+.celsius0,
+.kelvin0,
+.fahrenheit0 {
+    margin: 10px;
+    padding: 10px;
+    color: #f2f2f2;
+    font-family: 'Questrial';
+    font-size: 18px;
+    font-weight: 900;
+}
+
+input[type=number] {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: none;
+    font-size: 14px;
+    background-color: rgb(221, 221, 221, 0.8);
+    outline: none;
+}
+
+#footer-items {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-contents {
+    color: #fff;
+    text-align: center;
+    margin-top: -15vh;
+    margin-bottom: 10vh;
+}
+
+.footer {
+    font-size: 12px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.facebook,
+.twitter,
+.instagram,
+.linkedin,
+.github,
+.envelope {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.facebook:hover,
+.twitter:hover,
+.instagram:hover,
+.linkedin:hover,
+.github:hover,
+.envelope:hover {
+    color: #ccc;
+}
+
+@media only screen and (max-width: 768px) {
+    .container-box {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 280px 1fr;
+        grid-template-areas: 
+        ". . ."
+        ". b .";
+        animation: fadeIn 5s 1;
+    }
+    
+    @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+      
+        to {
+          opacity: 1;
+        }
+      }
+    
+    .box2 {
+        grid-area: b;
+        border: 5px solid #241007;
+        border-radius: 20px 20px 0px 0px;
+    }
+    h2,
+    .container-header,
+    .celsius0,
+    .kelvin0,
+    .fahrenheit0 {
+        font-size: 100%;
+    }
+
+}
